@@ -1,4 +1,4 @@
-let enames = ["Rahul", "sonia", "Priyanka", "Modi"];
+let enames = ["Rahul", "sonia", "Priyanka", "Modi","gandhi"];
 
 let emp = {
     id: 101,
@@ -29,4 +29,11 @@ let emp4 = {
     role: "friend of doctor"
 };
 
-console.log(emp,emp2,emp3,emp4)
+let emp5 = {
+
+    id: 105,
+    name:"gandhi",
+    salary: 2000000
+};
+
+console.log(emp,emp2,emp3,emp4,emp5)
