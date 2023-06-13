@@ -1,11 +1,13 @@
-var salary = 60000
+// var salary = 60000
 
-if(salary>50000) {
+// if(salary>50000) {
 
-    console.log("he is rich");
-}
+//     console.log("he is rich");
+// }
 
-else{
+// else{
 
-    console.log("he is poor");
-}
+//     console.log("he is poor");
+// }
+var sal = 700;
+sal> 700 ? console.log('good'):console.log('bad');
