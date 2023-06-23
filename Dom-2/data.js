@@ -102,7 +102,7 @@ let users = [{ "id": 1, "name": "Blakeley", "email": "bstreets0@chronoengine.com
 { "id": 102, "name": "Tiffy", "email": "tambler2t@chronoengine.com", "gender": "Female", "contry": "Portugal" }]
 
 
-function displayUserData() {
+let displayUserData=()=>{
 
     let rows = ""
     for (user of users) {
@@ -110,9 +110,9 @@ function displayUserData() {
                             <td> ${user.id}</td>
                             <td> ${user.name}</td>
                             <td> ${user.email}</td>
-                            <td> ${user.gender.substr(0,1)}</td>
+                            <td> ${user.gender.substr(0, 1)}</td>
                             <td> ${user.contry}</td>
-                              <td> ${user.email.substring(0,user.email.indexOf("@"))}</td>
+                              <td> ${user.email.substring(0, user.email.indexOf("@"))}</td>
                         </tr>`
     }
     document.getElementById('abc').innerHTML = rows
