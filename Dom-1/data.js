@@ -6,13 +6,13 @@ let employees = [{ id: 101, name: "Rahlul", salary: 45000 },
 let displayData = () => {
     //alert("Test Case 123")
     let rows = ""
-    for (employee of employees) {
+    employees.map((emp)=> {
         rows = rows + `<tr>
-            <td> ${employee.id} </td >
-            <td> ${employee.name} </td >
-            <td> ${employee.salary} </td >
+            <td> ${emp.id} </td >
+            <td> ${emp.name} </td >
+            <td> ${emp.salary} </td >
         </tr >`
-    }
+    })
     //document.getElementById('abc').innerHTML = "GM"
     document.getElementById('abc').innerHTML = rows
 }
