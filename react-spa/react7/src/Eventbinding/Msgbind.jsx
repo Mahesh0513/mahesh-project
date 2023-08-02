@@ -6,7 +6,8 @@ class Msgbind extends React.Component{
         super(props)
         console.log('first const')
         this.state={
-            msg:"helo"
+            msg:"heloo"
+
         }
     }
 
@@ -32,10 +33,13 @@ class Msgbind extends React.Component{
             <div>
                 <h1>Msgbind</h1>
                 <h2>msg:{this.state.msg}</h2>
-                <button onClick={this.gmHandler}>GM</button>
-                <button onClick={this.gaHandler}>GA</button>
-                <button onClick={this.geHandler}>GE</button>
-                <button onClick={this.gnHandler}>GN</button>
+                <button className="btn btn-success" onClick={this.gmHandler}>GM</button>
+                <hr />
+                <button className="btn btn-primary" onClick={this.gaHandler}>GA</button>
+                <hr />
+                <button className="btn btn-info" onClick={this.geHandler}>GE</button>
+                <hr />
+                <button className="btn btn-secondary" onClick={this.gnHandler}>GN</button>
             </div>
         )
     }

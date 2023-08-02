@@ -1,19 +1,16 @@
 import React from 'react'
-import Msgbind from './Eventbinding/Msgbind'
+import Product from './Product/Product'
+class App extends React.Component {
 
-const App =()=>{
+    render(){
+    return ( 
+    <div>
+       <Product/>
+      </div>
 
-
-        return(
-            
-            <div>
-            <nav className='navbar navbar-dark bg-dark'>
-                <a href="#" className='navbar-brand'>Pros Exmaple</a>
-            </nav>
-        <Msgbind/>
-      
-    </div>
-        )
+      )
+        
+}
     }
 
 export default App

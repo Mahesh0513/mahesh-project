@@ -42,7 +42,7 @@
                                      <td>{this.state.product}</td>
                                      <td>{this.state.price}</td>
                                      <td><img src={this.state.Image} alt=""  /></td>
-                                     <td><i onClick={this.decrhandler} className='fa fa-minus-circle'>-</i>{this.state.quan}<i onClick={this.increhandler} className='fa fa-plus-circle'>+</i></td>
+                                     <td><i onClick={this.decrhandler}>-</i>{this.state.quan}<i onClick={this.increhandler}>+</i></td>
                                      <td> {this.state.quan * this.state.price}</td>
                                  </tr>
                              </tbody>
