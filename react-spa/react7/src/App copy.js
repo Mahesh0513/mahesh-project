@@ -1,47 +1,30 @@
-// import logo from './logo.svg';
-// import './App.css';
+import React from 'react';
+import {BrowserRouter as Router, Routes,Route} from 'react-router-dom';
+import Navbar from './Navbar/Navbar';
+import Home from './Navbar/Home';
+import About from './Navbar/About';
+import Service from './Navbar/Service';
+import Contact from './Navbar/Contact';
 
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;
-import React from 'react'
-import Navbar from "./components3/Navbar"
-import CompA from"./components3/CompA"
-
-class App extends React.Component{
+class App extends React.Component {
 
     render(){
+    return ( 
+    <div>
+         <Router>
+         <Navbar/>
+      <Routes>
+          <Route path="/index" element={<Home/>}/>
+          <Route path="/about" element={<About/>}/>
+          <Route path="/services" element={<Service/>}/>
+          <Route path="/contact" element={<Contact/>}/>
+        </Routes>
+        </Router>
+      </div>
 
-        return <div>
-    
-        <Navbar/>
-        <hr />
-
-        <CompA/>
-
-
-    </div>
-    }
+      )
+        
 }
+    }
 
 export default App
-
